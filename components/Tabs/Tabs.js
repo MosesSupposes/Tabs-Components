@@ -30,7 +30,7 @@ class TabAccordion {
   select(event) {
     this.selectedTab.deselect()
     this.selectedTab.tabItem.deselect()
-    this.selectedTab = this.tabsLinks.find(el => el.element === event.target)
+    this.selectedTab = this.tabsLinks.find(x => x.element === event.target)
     this.selectedTab.element.classList.add('tabs-link-selected')
     this.selectedTab.itemElement.classList.add('tabs-item-selected')
   }
